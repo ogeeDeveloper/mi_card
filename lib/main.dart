@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               const CircleAvatar(
                 radius: 50.0,
@@ -39,54 +40,45 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2.5,
                 ),
               ),
-              Container(
-                color: Colors.white,
-                padding: const EdgeInsets.all(10.0),
-                margin: const EdgeInsets.symmetric(
-                    vertical: 10.0, horizontal: 20.0),
-                child: const Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+1 876 123 4532',
-                      style: TextStyle(
-                        color: Colors.teal,
-                        fontFamily: 'Source-Sans-3',
-                        fontSize: 20.0,
-                      ),
-                    )
-                  ],
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
                 ),
               ),
-              Container(
-                color: Colors.white,
-                padding: const EdgeInsets.all(10.0),
-                margin: const EdgeInsets.symmetric(
-                    vertical: 10.0, horizontal: 20.0),
-                child: const Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
+              const Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+1 876 123 4532',
+                    style: TextStyle(
                       color: Colors.teal,
+                      fontFamily: 'Source-Sans-3',
+                      fontSize: 20.0,
                     ),
-                    SizedBox(
-                      width: 10.0,
+                  ),
+                ),
+              ),
+              const Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'ogeedeveloper@email.com',
+                    style: TextStyle(
+                      color: Colors.teal,
+                      fontFamily: 'Source-Sans-3',
+                      fontSize: 20.0,
                     ),
-                    Text(
-                      'ogeedeveloper@mail.com',
-                      style: TextStyle(
-                        color: Colors.teal,
-                        fontFamily: 'Source-Sans-3',
-                        fontSize: 20.0,
-                      ),
-                    )
-                  ],
+                  ),
                 ),
               ),
             ],
