@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.blue,
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
               Text(
                 'Fullstack Developer'.toUpperCase(),
                 style: TextStyle(
-                  color: Colors.teal.shade100,
+                  color: Colors.blue.shade100,
                   fontFamily: 'Source-Sans-3',
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,
@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
                 height: 20.0,
                 width: 150.0,
                 child: Divider(
-                  color: Colors.teal.shade100,
+                  color: Colors.blue.shade100,
                 ),
               ),
               const Card(
@@ -52,12 +52,12 @@ class MyApp extends StatelessWidget {
                 child: ListTile(
                   leading: Icon(
                     Icons.phone,
-                    color: Colors.teal,
+                    color: Colors.blue,
                   ),
                   title: Text(
                     '+1 876 123 4532',
                     style: TextStyle(
-                      color: Colors.teal,
+                      color: Colors.blue,
                       fontFamily: 'Source-Sans-3',
                       fontSize: 20.0,
                     ),
@@ -69,12 +69,12 @@ class MyApp extends StatelessWidget {
                 child: ListTile(
                   leading: Icon(
                     Icons.email,
-                    color: Colors.teal,
+                    color: Colors.blue,
                   ),
                   title: Text(
                     'ogeedeveloper@email.com',
                     style: TextStyle(
-                      color: Colors.teal,
+                      color: Colors.blue,
                       fontFamily: 'Source-Sans-3',
                       fontSize: 20.0,
                     ),
